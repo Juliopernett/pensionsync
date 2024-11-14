@@ -1,0 +1,678 @@
+/* for ajax loading */
+#od_ajax
+{
+	display: block;
+	width: 300px;
+	height: 130px;
+
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    margin: 200px auto 0;
+    text-align: center;
+    z-index: 100;
+}
+
+
+#datos_fact
+{
+ position: absolute;
+ width: 40%;
+ height: 30%;
+ z-index: 100;
+ top: 10%; 
+ left: 1%;
+ background-color: white;
+}
+
+#datos_productos
+{
+ position: absolute;
+ width: 40%;
+ height: 10px;
+ z-index: 100;
+ top: 33%; 
+ left: 1%;
+ background-color: white;
+ /*overflow: scroll;*/
+}
+#botones_fact
+{
+ position: absolute;
+ width: 40%;
+ height: 30%;
+ z-index: 100;
+ top: 10%; 
+ left: 30px;
+ background-color: white;
+}
+
+#grilla_articulos
+{
+ position: absolute;
+ width: 60%;
+ height: 88%;
+ z-index: 100;
+ top: 10%; 
+ left: 40%;
+ background-color: white;
+ overflow: scroll;
+}
+
+#grilla
+{
+ position: absolute;
+ width: 61%;
+ height: 60%;
+ z-index: 100;
+ top: 25%; 
+ left: 40%;
+ background-color: white;
+ overflow: scroll;
+}
+
+.navbar-fixed-bottom{
+display: none;
+}
+#f_total
+  {
+  text-align: right;
+  font-weight: bold;
+  font-size: 21px;
+  font-family: Arial, Verdana;
+  color: red;
+  background-color: transparent;
+  }
+  #f_iva
+  {
+  font-size: 80%;
+  text-align: right;
+  font-weight: bold;
+  background-color: transparent;
+  }
+
+  #act_add {
+  margin-top: 24px;
+  padding: 7px;
+  }
+
+  #cli_add {
+  font-size: 90%;
+  margin-top: 24px;
+  padding: 7px;
+  background-color: #5cb85c;
+  font-weight: bold;
+  font-family: Arial, Verdana;
+  color: white;
+  }
+
+  #save {
+  font-size: 90%;
+  margin-top: 24px;
+  padding: 7px;
+  background-color: #3c8dbc;
+  font-weight: bold;
+  font-family: Arial, Verdana;
+  color: white;
+  }
+
+ 
+
+  #tool {
+    position: absolute;
+    background-image:url(../../../../bin/modules/images/question.png);
+    background-position: center;
+    top: 127px; 
+    left: 224px;  
+    margin-top: 24px;
+    padding: 12px;
+    background-color: transparent;
+ 
+  }
+
+   #ver_frecuentes {
+  font-size: 90%;
+  margin-top: 24px;
+  padding: 7px;
+  background-color: #5cb85c;
+  font-weight: bold;
+  font-family: Arial, Verdana;
+  color: white;
+  }
+
+ #factura_det tbody td {
+padding: 2px 4px;
+
+
+}
+
+#factura_det td:nth-child(4), 
+#factura_det td:nth-child(5), 
+#factura_det td:nth-child(6)
+{
+ text-align:right !important;
+ padding-right:70px;
+}
+
+
+
+#admin_cierre td:nth-child(4), 
+#admin_cierre td:nth-child(5), 
+#admin_cierre td:nth-child(6),
+#admin_cierre td:nth-child(7), 
+#admin_cierre td:nth-child(8), 
+#admin_cierre td:nth-child(9)
+{
+ text-align:right !important;
+ padding-left:50px;
+
+}
+
+#cierre_diario td:nth-child(4), 
+#cierre_diario td:nth-child(5), 
+#cierre_diario td:nth-child(6),
+#cierre_diario td:nth-child(7), 
+#cierre_diario td:nth-child(8), 
+#cierre_diario td:nth-child(9)
+{
+ text-align:right !important;
+ padding-left:50px;
+
+
+}
+
+
+
+#cambioTarifa td:nth-child(7)
+{
+ text-align:center !important;
+ padding-left:50px;
+}
+
+ 
+#admin_factura td:nth-child(8)
+{
+ text-align:left !important;
+ //padding-left:500px;
+ //width:100%;
+
+}
+ 
+
+  #f_exento
+  {
+    font-size: 80%;
+    text-align: right;
+    font-weight: bold;
+    background-color: transparent;
+  }
+  #f_gravado
+  {
+    font-size: 80%;
+    text-align: right;
+    font-weight: bold;
+    background-color: transparent;
+  }
+  #f_subtotal
+  {
+    text-align: right;
+    font-weight: bold;
+    background-color: transparent;
+  }
+
+  #f_valor_subtotal
+  {
+    text-align: right;
+    font-weight: bold;
+    background-color: transparent;
+    color: red;
+    font-size: 150%;
+    
+  }
+  #f_cantidad
+  {
+    text-align: right;
+    font-weight: bold;
+  }
+
+   #f_descuento_unitario
+  {
+    text-align: right;
+    font-weight: bold;
+  }
+  #f_peso
+  {
+    text-align: right;
+    font-weight: bold;
+  }
+  #f_valor
+  {
+    text-align: right;
+    font-weight: bold;
+  }
+
+  #existencia
+  {
+    text-align: right;
+    font-weight: bold;
+  }
+   #existencia1
+  {
+    text-align: right;
+    font-weight: bold;
+  }
+
+  #f_paga_con
+  {
+  text-align: right;
+  font-weight: bold;
+  font-size: 50px;
+  font-family: Arial, Verdana;
+  color: blue;
+  background-color: transparent;
+  height: 100px;
+  }
+  #f_cambio
+  {
+  text-align: right;
+  font-weight: bold;
+  font-size: 50px;
+  font-family: Arial, Verdana;
+  color: black;
+  background-color: transparent;
+  height: 100px;
+  }
+  #f_paga
+  {
+  text-align: right;
+  font-weight: bold;
+  font-size: 50px;
+  font-family: Arial, Verdana;
+  color: green;
+  background-color: transparent;
+  height: 100px;
+  }
+
+  #btn_mil {
+  margin-top: -43px;
+  padding: 20px; 
+  background-image:url(../../../../bin/modules/images/moneda/mil.png);
+  background-repeat:no-repeat;
+  height:100px;
+  width:200px;
+  background-position:center;
+  }
+  #btn_dosmil {
+  margin-top: -43px;
+  padding: 40px; 
+  background-image:url(../../../../bin/modules/images/moneda/dosmil.png);
+  background-repeat:no-repeat;
+  height:100px;
+  width:200px;
+  background-position:center;
+  }
+  #btn_cincomil {
+  margin-top: -10px;
+  padding: 40px; 
+  background-image:url(../../../../bin/modules/images/moneda/cincomil.png);
+  background-repeat:no-repeat;
+  height:100px;
+  width:200px;
+  background-position:center;
+  }
+  #btn_diezmil {
+  margin-top: -10px;
+  padding: 40px; 
+  background-image:url(../../../../bin/modules/images/moneda/diezmil.png);
+  background-repeat:no-repeat;
+  height:100px;
+  width:200px;
+  background-position:center;
+  }
+   #btn_veintemil {
+  margin-top: 24px;
+  padding: 40px; 
+  background-image:url(../../../../bin/modules/images/moneda/veintemil.png);
+  background-repeat:no-repeat;
+  height:100px;
+  width:200px;
+  background-position:center;
+  }
+   #btn_cincuentamil {
+  margin-top: 24px;
+  padding: 40px; 
+  background-image:url(../../../../bin/modules/images/moneda/cincuentamil.png);
+  background-repeat:no-repeat;
+  height:100px;
+  width:200px;
+  background-position:center;
+  }
+
+   #btm_mil {
+  margin-top: 24px;
+  padding: 10px; 
+  background-image:url(../../../../bin/modules/images/moneda/m_mil.png);
+  background-size: 70px 67px;
+  background-repeat:no-repeat;
+  height:70px;
+  width:67px;
+  background-position:center;
+  background-color: transparent;
+  border: 0px;
+  }
+   #btm_quin {
+  margin-top: 24px;
+  padding: 10px; 
+  background-image:url(../../../../bin/modules/images/moneda/m_quini.png);
+  background-size: 70px 70px;
+  background-repeat:no-repeat;
+  height:70px;
+  width:67px;
+  background-position:center;
+  background-color: transparent;
+  border: 0px;
+  }
+   #btm_dos {
+  margin-top: 24px;
+  padding: 10px; 
+  background-image:url(../../../../bin/modules/images/moneda/m_dosc.png);
+  background-size: 68px 70px;
+  background-repeat:no-repeat;
+  height:70px;
+  width:67px;
+  background-position:center;
+  background-color: transparent;
+  border: 0px;
+  }
+   #btm_cien {
+  margin-top: 24px;
+  padding: 10px; 
+  background-image:url(../../../../bin/modules/images/moneda/m_cien.png);
+  background-size: 68px 70px;
+  background-repeat:no-repeat;
+  height:70px;
+  width:67px;
+  background-position:center;
+  background-color: transparent;
+  border: 0px;
+  }
+   #btm_cinco {
+  margin-top: 24px;
+  padding: 10px; 
+  background-image:url(../../../../bin/modules/images/moneda/m_cinco.png);
+  background-size: 70px 67px;
+  background-repeat:no-repeat;
+  height:70px;
+  width:67px;
+  background-position:center;
+  background-color: transparent;
+  border: 0px;
+  }
+
+  #monedas{
+ position: absolute; /* podría ser relative */
+ width: 1000px;
+ height: 200px;
+ left: 470px;
+ top: 340px;
+  }
+
+#existencias_filter{
+padding:0px 50px;
+
+}
+  
+#orden_filter{
+display: none;
+}
+
+#orden_length{
+display: none;
+  }
+#existencias_length{
+padding:0px 0px;
+  }
+
+
+#od_overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background: #000;
+    opacity: 0.7;
+    filter: alpha(opacity=70);
+    z-index: 99;
+
+}
+
+.navbar {  
+  margin-bottom: 10px;
+}
+
+/* AGENDA ------------------- */
+.col-fix-100
+{
+    width:85px;
+    float: left;
+}
+
+.col-fix-70
+{
+    width: 70px;
+    float: left;
+}
+
+#agenda_left .panel-body 
+{
+  padding: 0px; 
+}
+
+#agenda_left .form-group {
+  margin-bottom: 8px;
+}
+
+#agenda_lista  tbody td {
+  padding: 2px 4px;
+}
+
+#agenda_lista .btn-xs
+{
+  padding: 2px 4px;
+}
+
+#agenda_basic .panel-heading {
+  padding: 2px 10px;
+}
+
+#frmAgendaBasic #btn_calendar, #upd_btn_calendar  
+{
+  margin-top: 25px;
+  /* padding: 9px; */
+}
+
+#new_cita_fecha
+{  
+  float : right;
+}
+
+#filtros button
+{
+  
+}
+
+.estado_cita_1
+{
+  /* padding: 4px 4px; */
+}
+
+#orden tbody td {
+padding: 2px 4px;
+}
+
+#rutas_det tbody td {
+padding: 2px 4px;
+}
+
+#factura_det tbody td {
+padding: 2px 4px;
+//text-align: right;
+}
+
+#existencias_inv tbody td {
+padding: 2px 4px;
+}
+#cambioTarifa tbody td {
+padding: 2px 4px;
+}
+
+#existencias_invent tbody td {
+padding: 2px 4px;
+}
+
+#existencias tbody td{   
+    padding: 2px 4px;
+}
+
+#existencias {
+    width: 100% !Important;
+    padding: 2px 4px;
+}
+
+#admin_cierre tbody td {
+padding: 2px 4px;
+}
+
+#cierre_diario tbody td {
+padding: 2px 4px;
+}
+
+#despacho tbody td {
+padding: 2px 4px;
+}
+
+#pendientesEntrega tbody td {
+padding: 2px 4px;
+}
+
+#despacho_factura tbody td {
+padding: 2px 4px;
+}
+
+#cotizacion_factura_det tbody td {
+padding: 2px 4px;
+}
+
+#adminOrdenes tbody td {
+padding: 2px 4px;
+}
+
+#adminRemisiones tbody td {
+padding: 2px 4px;
+}
+
+#masVendidos tbody td {
+padding: 2px 4px;
+}
+
+
+#facturaDevolucion tbody td {
+padding: 2px 4px;
+}
+
+#transform tbody td {
+padding: 2px 4px;
+}
+
+#adminPendientes tbody td {
+padding: 2px 4px;
+}
+
+#articulos tbody td {
+padding: 2px 4px;
+}
+
+#clientes tbody td {
+padding: 2px 4px;
+}
+
+#usuarios tbody td {
+padding: 2px 4px;
+}
+
+ #slider{
+        background-color: white;
+        color: white;
+      }
+
+.list-group-item{
+
+ color: #D0D9E1;
+  font-family: Arial;
+  font-size: 14px;
+  letter-spacing: 1px;
+  margin: 0;
+  opacity: .9;
+  padding: 10; 
+
+}
+#usuario_factura tbody td {
+padding: 2px 4px;
+}
+
+#factura_cab .form-group {
+margin-bottom: 6px;
+}
+
+/*#factura_cab .panel-heading
+{
+  padding-top: 2px;
+  padding-bottom: 2px;
+}*/
+
+.panel-heading
+{
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
+#factura_detalle{
+  display: none;
+}
+
+#buttons{
+  display: none;
+}
+
+#autocomplete{
+  display: none;
+}
+#combo_usuario{
+  display: none;
+}
+
+#num_factura{
+  display: none;
+}
+#factura_cab .panel-body {
+  padding: 2px;
+}
+
+#admin_factura tbody td {
+padding: 2px 4px;
+}
+
+#admin_devoluciones tbody td {
+padding: 2px 4px;
+}
+
+#editRemision tbody td {
+padding: 2px 4px;
+}
+#por_fecha{
+  display: none;
+}
